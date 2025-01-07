@@ -27,6 +27,4 @@ Feel free to explore and reach out if you have any questions or feedback!
 - [freeCodeCamp: Foundational C# with Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft)
 - [Microsoft C# Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
----
-
 Happy Coding! 🎉

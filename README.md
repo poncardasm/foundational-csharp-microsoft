@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to my project repository for the **(New)Foundational C# with Microsoft** course! This course, offered by freeCodeCamp in collaboration with Microsoft, provides a comprehensive introduction to C# programming, covering its core concepts, syntax, and practical applications.
+Welcome to my project repository for the **(New)Foundational C# with Microsoft** course! This course, offered by Microsoft in collaboration with freeCodeCamp, provides a comprehensive introduction to C# programming, covering its core concepts, syntax, and practical applications.
 
 ## About the Course
 

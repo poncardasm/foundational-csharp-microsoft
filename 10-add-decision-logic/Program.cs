@@ -18,7 +18,7 @@ if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
   Console.WriteLine($"You rolled doubles! +2 bonus to your total = {total}!");
 }
 
-if ((roll1 == roll2) && (roll2 == roll3));
+if ((roll1 == roll2) && (roll2 == roll3))
 {
   total += 6;
   Console.WriteLine($"You rolled triples! +6 bonus to your total = {total}!");
@@ -28,8 +28,7 @@ if (total >= 15)
 {
   Console.WriteLine("You win!");
 }
-
-if (total < 15)
+else 
 {
   Console.WriteLine("Sorry, you lose.");
 }

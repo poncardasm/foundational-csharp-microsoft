@@ -52,7 +52,6 @@ desktop.ini
 *.iml
 
 # JetBrains Rider
-.idea/
 *.sln.iml
 out/
 

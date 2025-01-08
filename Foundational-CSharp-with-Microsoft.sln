@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_add-decision-logic", "10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-1_improve-renewal-rate-subscription", "10-1_improve-renewal-rate-subscription\10-1_improve-renewal-rate-subscription.csproj", "{EDAC064F-7293-4827-A3F3-B2B00F958AA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_array-basics", "11_array-basics\11_array-basics.csproj", "{1C714611-4C9A-4409-9BD4-F008374D99CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EDAC064F-7293-4827-A3F3-B2B00F958AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDAC064F-7293-4827-A3F3-B2B00F958AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDAC064F-7293-4827-A3F3-B2B00F958AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

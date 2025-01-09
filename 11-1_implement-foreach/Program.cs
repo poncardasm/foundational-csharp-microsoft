@@ -10,8 +10,15 @@ Suppose you work for a manufacturing company. The company needs you to complete 
 //   Console.WriteLine(name);
 // }
 
+using System.Collections;
+
 int[] inventory = [ 200, 450, 700, 175, 250 ];
+int sum = 0;
+
 foreach (int items in inventory)
 {
+  sum += items;
   Console.WriteLine(items);
 }
+
+Console.WriteLine($"We have a total of {sum} items in inventory.");

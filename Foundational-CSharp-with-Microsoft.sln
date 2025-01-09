@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-1_improve-renewal-rate-s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_array-basics", "11_array-basics\11_array-basics.csproj", "{1C714611-4C9A-4409-9BD4-F008374D99CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-1_implement-foreach", "11-1_implement-foreach\11-1_implement-foreach.csproj", "{491CFD20-C337-40E6-BCC2-3D99A0D53F00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C714611-4C9A-4409-9BD4-F008374D99CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491CFD20-C337-40E6-BCC2-3D99A0D53F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491CFD20-C337-40E6-BCC2-3D99A0D53F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491CFD20-C337-40E6-BCC2-3D99A0D53F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491CFD20-C337-40E6-BCC2-3D99A0D53F00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

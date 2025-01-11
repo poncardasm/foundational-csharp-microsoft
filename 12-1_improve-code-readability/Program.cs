@@ -6,7 +6,6 @@
   4. Prints the reversed message and the count of 'o' characters.
 */
 
-
 string str = "The quick brown fox jumps over the lazy dog.";
 char[] charMessage = str.ToCharArray();
 Array.Reverse(charMessage);

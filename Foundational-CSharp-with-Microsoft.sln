@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-1_implement-foreach", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-2_fraudulent-order-challenge", "11-2_fraudulent-order-challenge\11-2_fraudulent-order-challenge.csproj", "{C9D5E9AA-F7C1-4260-91AE-715EF1554E3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_code-comments", "12_code-comments\12_code-comments.csproj", "{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C9D5E9AA-F7C1-4260-91AE-715EF1554E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9D5E9AA-F7C1-4260-91AE-715EF1554E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9D5E9AA-F7C1-4260-91AE-715EF1554E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

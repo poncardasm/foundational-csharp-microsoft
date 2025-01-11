@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-2_fraudulent-order-chall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_code-comments", "12_code-comments\12_code-comments.csproj", "{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-1_improve-code-readability", "12-1_improve-code-readability\12-1_improve-code-readability.csproj", "{37215A79-7F52-4FEA-8C27-5207EA9F60BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14CCCA7F-FAAF-48E9-AFFC-FEECF1233E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37215A79-7F52-4FEA-8C27-5207EA9F60BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37215A79-7F52-4FEA-8C27-5207EA9F60BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37215A79-7F52-4FEA-8C27-5207EA9F60BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37215A79-7F52-4FEA-8C27-5207EA9F60BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

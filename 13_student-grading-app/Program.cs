@@ -27,16 +27,16 @@ foreach (string name in studentNames)
   else if (currentStudent == "Logan")
     studentScores = loganScores;
 
-  int sophiaSum = 0;
-  decimal sophiaScoreAvg;
+  int sumAssignmentScores = 0;
+  decimal currentStudentGrade;
 
-  foreach (int score in sophiaScores)
+  foreach (int score in studentScores)
   {
     // Add the exam score to the sum
-    sophiaSum += score;
+    sumAssignmentScores += score;
   }
 
-  sophiaScoreAvg = (decimal)sophiaSum / currentAssignments;
+  currentStudentGrade = (decimal)sumAssignmentScores / currentAssignments;
 
   Console.WriteLine("Student\t\tGrade\n");
   Console.WriteLine("Sophia:\t\t" + sophiaScoreAvg + "\tA-");

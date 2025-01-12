@@ -8,12 +8,17 @@ int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
 int sophiaSum = 0;
 
-decimal sophiaScore;
+decimal sophiaScoreAvg;
 
-sophiaScore = (decimal)sophiaSum / currentAssignments;
+foreach (int score in sophiaScores)
+{
+  sophiaSum += score;
+}
+
+sophiaScoreAvg = (decimal)sophiaSum / currentAssignments;
 
 Console.WriteLine("Student\t\tGrade\n");
-Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+Console.WriteLine("Sophia:\t\t" + sophiaScoreAvg + "\tA-");
 
-Console.WriteLine("Press the Enter key to continue");
+Console.WriteLine("\nPress the Enter key to continue");
 Console.ReadLine();

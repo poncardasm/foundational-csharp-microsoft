@@ -31,9 +31,16 @@ foreach (string name in studentNames)
   else if (currentStudent == "Logan")
     studentScores = loganScores;
 
+  // initialize/reset the sum of scored assignments
   int sumAssignmentScores = 0;
-  decimal currentStudentGrade;
 
+  // initialize/reset the calculated average of exam + extra credit scores
+  decimal currentStudentGrade = 0;
+
+  // initialize/reset a counter for the number of assignment 
+  int gradedAssignments = 0;
+
+  // loop through the scores array and complete calculations for currentStudent
   foreach (int score in studentScores)
   {
     // Add the exam score to the sum

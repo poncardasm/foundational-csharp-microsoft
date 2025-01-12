@@ -2,14 +2,16 @@
 int currentAssignments = 5;
 
 int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
-int[] andrewScores = new int[] { 90, 86, 87, 98, 100 };
-int[] emmaScores = new int[] { 90, 86, 87, 98, 100 };
-int[] loganScores = new int[] { 90, 86, 87, 98, 100 };
+int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
 // Student names
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
 int[] studentScores = new int[10];
+
+Console.WriteLine("Student\t\tGrade\n");
 
 foreach (string name in studentNames)
 {
@@ -38,8 +40,8 @@ foreach (string name in studentNames)
 
   currentStudentGrade = (decimal)sumAssignmentScores / currentAssignments;
 
-  Console.WriteLine("Student\t\tGrade\n");
-  Console.WriteLine("Sophia:\t\t" + sophiaScoreAvg + "\tA-");
+
+  Console.WriteLine($"{currentStudent}:\t\t {currentStudentGrade} \t?");
 }
 
 Console.WriteLine("\nPress the Enter key to continue");

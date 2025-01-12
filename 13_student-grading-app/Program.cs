@@ -6,9 +6,17 @@ int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
 int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
 int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
+// Student names
+string[] studentNames = new string[] {"Sophia", "Andrew", "Emma", "Logan"};
+
 int sophiaSum = 0;
 
 decimal sophiaScoreAvg;
+
+foreach (string name in studentNames)
+{
+  Console.WriteLine($"{name}");
+}
 
 foreach (int score in sophiaScores)
 {

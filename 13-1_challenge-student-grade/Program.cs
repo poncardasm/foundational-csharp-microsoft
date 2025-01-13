@@ -74,11 +74,13 @@ foreach (string name in studentNames)
   */
   foreach (int score in studentScores)
   {
-    examScore += score;
     gradedAssignments += 1;
 
     if (gradedAssignments <= examAssignments)
+    {
+      examScore += score;
       sumAssignmentScores += score;
+    }
 
     else
       sumAssignmentScores += score / 10;
@@ -133,5 +135,5 @@ foreach (string name in studentNames)
 }
 
 // required for running in VS Code (keeps the Output windows open to view results)
-// Console.WriteLine("\n\rPress the Enter key to continue");
-// Console.ReadLine();
+Console.WriteLine("\n\rPress the Enter key to continue");
+Console.ReadLine();

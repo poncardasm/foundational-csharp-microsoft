@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_student-grading-app", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-1_challenge-student-grade", "13-1_challenge-student-grade\13-1_challenge-student-grade.csproj", "{DE57A6C1-4D03-4533-A71C-A931C1E3BDCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_evaluate-boolean-expressions", "14_evaluate-boolean-expressions\14_evaluate-boolean-expressions.csproj", "{C3554839-DDC8-4046-B3A1-248DDA456121}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{DE57A6C1-4D03-4533-A71C-A931C1E3BDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE57A6C1-4D03-4533-A71C-A931C1E3BDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE57A6C1-4D03-4533-A71C-A931C1E3BDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3554839-DDC8-4046-B3A1-248DDA456121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3554839-DDC8-4046-B3A1-248DDA456121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3554839-DDC8-4046-B3A1-248DDA456121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3554839-DDC8-4046-B3A1-248DDA456121}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

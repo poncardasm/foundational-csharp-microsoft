@@ -20,12 +20,13 @@ This C# console application is designed to:
 */
 int examAssignments = 5;
 
-string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+// string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+string[] studentNames = new string[] { "Sophia" };
 
 int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
-int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
-int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
-int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
+// int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
+// int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
+// int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
 
 int[] studentScores = new int[10];
 
@@ -50,14 +51,14 @@ foreach (string name in studentNames)
   if (currentStudent == "Sophia")
     studentScores = sophiaScores;
 
-  else if (currentStudent == "Andrew")
-    studentScores = andrewScores;
+  // else if (currentStudent == "Andrew")
+  //   studentScores = andrewScores;
 
-  else if (currentStudent == "Emma")
-    studentScores = emmaScores;
+  // else if (currentStudent == "Emma")
+  //   studentScores = emmaScores;
 
-  else if (currentStudent == "Logan")
-    studentScores = loganScores;
+  // else if (currentStudent == "Logan")
+  //   studentScores = loganScores;
 
   int sumAssignmentScores = 0;
 
@@ -83,7 +84,11 @@ foreach (string name in studentNames)
     }
 
     else
+    {
       sumAssignmentScores += score / 10;
+      Console.Write("Extra credit: ");
+      Console.WriteLine((decimal)(sumAssignmentScores) / examAssignments);
+    }
   }
 
   currentExamScore = (decimal)(examScore) / examAssignments;

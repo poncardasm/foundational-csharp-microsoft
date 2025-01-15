@@ -10,3 +10,6 @@
   - You should be able to accomplish the desired result in three lines of code.
 */
 
+Random coinFlip = new Random();
+int coinFlipResult = coinFlip.Next(1, 3);
+Console.WriteLine($"{coinFlipResult}");

@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_evaluate-boolean-express
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-1_conditional-operator", "14-1_conditional-operator\14-1_conditional-operator.csproj", "{1FEC8FC6-AC9B-4681-B1DA-66119CE3E7EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-2_challenge-coin-flip", "14-2_challenge-coin-flip\14-2_challenge-coin-flip.csproj", "{C395B49B-A4A3-4455-80F5-C356F9C772B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1FEC8FC6-AC9B-4681-B1DA-66119CE3E7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FEC8FC6-AC9B-4681-B1DA-66119CE3E7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FEC8FC6-AC9B-4681-B1DA-66119CE3E7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C395B49B-A4A3-4455-80F5-C356F9C772B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C395B49B-A4A3-4455-80F5-C356F9C772B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C395B49B-A4A3-4455-80F5-C356F9C772B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C395B49B-A4A3-4455-80F5-C356F9C772B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

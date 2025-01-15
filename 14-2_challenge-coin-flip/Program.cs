@@ -12,4 +12,4 @@
 
 Random coinFlip = new Random();
 int coinFlipResult = coinFlip.Next(1, 3);
-Console.WriteLine($"{coinFlipResult}");
+Console.WriteLine($"Coin flip: {(coinFlipResult == 1 ? "Heads" : "Tails")}");

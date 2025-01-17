@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-3_challenge-decision-log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_code-block-variable-scope", "15_code-block-variable-scope\15_code-block-variable-scope.csproj", "{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-1_challenge-variable-scope", "15-1_challenge-variable-scope\15-1_challenge-variable-scope.csproj", "{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

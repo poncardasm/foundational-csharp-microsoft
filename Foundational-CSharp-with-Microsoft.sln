@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-2_challenge-coin-flip", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-3_challenge-decision-logic", "14-3_challenge-decision-logic\14-3_challenge-decision-logic.csproj", "{55DF4A4A-20F7-46F4-9CA7-CFE6C31EAEDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_code-block-variable-scope", "15_code-block-variable-scope\15_code-block-variable-scope.csproj", "{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{55DF4A4A-20F7-46F4-9CA7-CFE6C31EAEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55DF4A4A-20F7-46F4-9CA7-CFE6C31EAEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55DF4A4A-20F7-46F4-9CA7-CFE6C31EAEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD46A96-647B-4BAF-BBE5-4EA69951A77C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

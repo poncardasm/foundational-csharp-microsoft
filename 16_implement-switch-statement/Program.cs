@@ -22,4 +22,4 @@ switch (employeeLevel)
     break;
 }
 
-Console.WriteLine($"{employeeName}, {employeeLevel}");
+Console.WriteLine($"{employeeName}, {title}");

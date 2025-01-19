@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_code-block-variable-scop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-1_challenge-variable-scope", "15-1_challenge-variable-scope\15-1_challenge-variable-scope.csproj", "{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_implement-switch-statement", "16_implement-switch-statement\16_implement-switch-statement.csproj", "{1CC298BA-1ABB-4A73-891A-4D6CF07BAAEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{695363F5-1B06-4BFB-A9A2-197DCAD6AE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC298BA-1ABB-4A73-891A-4D6CF07BAAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC298BA-1ABB-4A73-891A-4D6CF07BAAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC298BA-1ABB-4A73-891A-4D6CF07BAAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC298BA-1ABB-4A73-891A-4D6CF07BAAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

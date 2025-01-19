@@ -37,4 +37,20 @@ switch (product[1])
     break;
 }
 
+switch (product[2])
+{
+  case "S":
+    size = "Small";
+    break;
+  case "M":
+    size = "Medium";
+    break;
+  case "L":
+    size = "Large";
+    break;
+  default:
+    size = "One Size Fits All";
+    break;
+}
+
 Console.WriteLine($"Product: {size} {color} {type}");

@@ -24,4 +24,17 @@ switch (product[0])
     break;
 }
 
+switch (product[1])
+{
+  case "BL":
+    color = "Black";
+    break;
+  case "MN":
+    color = "Maroon";
+    break;
+  default:
+    color = "White";
+    break;
+}
+
 Console.WriteLine($"Product: {size} {color} {type}");

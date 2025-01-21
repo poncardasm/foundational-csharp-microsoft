@@ -11,7 +11,16 @@
   Change the iteration conditions
 */
 
-for (int i = 10; i >= 0; i--)
+// for (int i = 10; i >= 0; i--)
+// {
+//   Console.WriteLine(i);
+// }
+
+/*
+  Experiment with the iterator's pattern
+*/
+
+for (int i = 0; i < 10; i += 3)
 {
   Console.WriteLine(i);
 }

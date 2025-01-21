@@ -35,3 +35,12 @@
 //   if (i == 7) break;
 // }
 
+/*
+  Loop through each element of an array
+*/
+
+string[] names = { "Alan", "Eddie", "David", "Michael" };
+for (int i = names.Length - 1; i >= 0; i--)
+{
+  Console.WriteLine(names[i]);
+}

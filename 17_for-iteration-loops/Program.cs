@@ -20,7 +20,18 @@
   Experiment with the iterator's pattern
 */
 
-for (int i = 0; i < 10; i += 3)
-{
-  Console.WriteLine(i);
-}
+// for (int i = 0; i < 10; i += 3)
+// {
+//   Console.WriteLine(i);
+// }
+
+/*
+  Use the break keyword to break the iteration statement
+*/
+
+// for (int i = 0; i < 10; i++)
+// {
+//   Console.WriteLine(i);
+//   if (i == 7) break;
+// }
+

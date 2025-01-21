@@ -39,8 +39,18 @@
   Loop through each element of an array
 */
 
-string[] names = { "Alan", "Eddie", "David", "Michael" };
-for (int i = names.Length - 1; i >= 0; i--)
-{
-  Console.WriteLine(names[i]);
-}
+// string[] names = { "Alan", "Eddie", "David", "Michael" };
+// for (int i = names.Length - 1; i >= 0; i--)
+// {
+//   Console.WriteLine(names[i]);
+// }
+
+/*
+  Examine the limitation of the foreach statement
+*/
+
+// string[] names = { "Alan", "Eddie", "David", "Michael" };
+// foreach (var name in names)
+// {
+//   if (name == "David") name = "Sammy";
+// }

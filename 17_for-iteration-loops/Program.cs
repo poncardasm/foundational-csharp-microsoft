@@ -54,3 +54,14 @@
 // {
 //   if (name == "David") name = "Sammy";
 // }
+
+/*
+  Overcoming the limitation of the foreach statement using the for statement
+*/
+string[] names = { "Alan", "Eddie", "David", "Michael" };
+for (int i = 0; i < names.Length; i++)
+{
+  if (names[i] == "David") names[i] = "Sammy";
+}
+
+foreach (var name in names) Console.WriteLine(name);

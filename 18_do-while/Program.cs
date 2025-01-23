@@ -4,7 +4,7 @@
 */
 
 Random randomNum = new Random();
-int current = 0;
+int current = randomNum.Next(1, 11);
 
 // do
 // {

@@ -16,7 +16,7 @@ int current = randomNum.Next(1, 11);
 
 while (current >= 3)
 {
-  Console.WriteLine(current);
+  Console.WriteLine($"Current num: {current}");
   current = randomNum.Next(1, 11);
 }
 Console.WriteLine($"Last number: {current}");

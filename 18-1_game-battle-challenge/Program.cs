@@ -19,3 +19,19 @@
   - Continue this sequence of attacking until either the monster's health or hero's health is zero or less.
   - Print the winner.
 */
+
+Random attackNum = new Random();
+int attackVal = attackNum.Next(1, 11);
+int playerHP = 10;
+int monsterHP = 10;
+int playerDMG = 0;
+int monsterDMG = 0;
+
+do
+{
+  attackVal = attackNum.Next(1, 11);
+  playerDMG = attackVal;
+
+  monsterHP -= playerDMG;
+  Console.WriteLine($"Monster was damaged and lost {}")
+} while ((playerHP > 0) || (monsterHP > 0));

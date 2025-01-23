@@ -30,12 +30,20 @@ do
   monsterHP -= heroDMG;
   Console.WriteLine($"Monster was damaged and lost {heroDMG} and now has {monsterHP} health");
 
-  if (monsterHP <= 0) continue;
+  if (monsterHP <= 0)
+  {
+    Console.WriteLine("Hero wins!");
+    break;
+  }
 
   int monsterDMG = attackNum.Next(1, 11);
   heroHP -= monsterDMG;
   Console.WriteLine($"Hero was damaged and lost {monsterDMG} and now has {heroHP} health");
 
-} while (heroHP > 0 && monsterHP > 0);
+  if (heroHP <= 0)
+  {
+    Console.WriteLine("Monster wins!");
+    break;
+  }
 
-Console.WriteLine(heroHP > monsterHP ? "Hero wins!" : "Monster wins!");
+} while (heroHP > 0 && monsterHP > 0);

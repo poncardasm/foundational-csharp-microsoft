@@ -6,8 +6,17 @@
 Random randomNum = new Random();
 int current = 0;
 
-do
+// do
+// {
+//   current = randomNum.Next(1, 11);
+//   Console.WriteLine(current);
+// } while (current != 7);
+
+// Write a while statement that iterates only while a random number is greater than some value
+
+while (current >= 3)
 {
-  current = randomNum.Next(1, 11);
   Console.WriteLine(current);
-} while (current != 7);
+  current = randomNum.Next(1, 11);
+}
+Console.WriteLine($"Last number: {current}");

@@ -3,8 +3,8 @@
   https://learn.microsoft.com/en-us/training/modules/csharp-do-while/
 */
 
-Random randomNum = new Random();
-int current = randomNum.Next(1, 11);
+// Random randomNum = new Random();
+// int current = randomNum.Next(1, 11);
 
 // do
 // {
@@ -14,9 +14,25 @@ int current = randomNum.Next(1, 11);
 
 // Write a while statement that iterates only while a random number is greater than some value
 
-while (current >= 3)
+// while (current >= 3)
+// {
+//   Console.WriteLine($"Current num: {current}");
+//   current = randomNum.Next(1, 11);
+// }
+// Console.WriteLine($"Last number: {current}");
+
+/*
+  Use the continue statement to step directly to the Boolean expression
+*/
+
+Random randomNum = new Random();
+int current = randomNum.Next(1, 11);
+
+do
 {
-  Console.WriteLine($"Current num: {current}");
   current = randomNum.Next(1, 11);
-}
-Console.WriteLine($"Last number: {current}");
+
+  if (current >= 8) continue;
+
+  Console.WriteLine(current);
+} while (current != 7);

@@ -32,9 +32,7 @@ do
   attackVal = attackNum.Next(1, 11);
   playerDMG = attackVal;
 
-  Console.WriteLine($"Player Damage: {playerDMG}");
   monsterHP -= playerDMG; // Update monsterHP
-  Console.WriteLine($"Monster HP: {monsterHP}");
 
-  // Console.WriteLine($"Monster was damaged and lost {playerDMG} and now has {monsterHP - playerDMG} health");
+  Console.WriteLine($"Monster was damaged and lost {playerDMG} and now has {monsterHP} health");
 } while (monsterHP > 0);

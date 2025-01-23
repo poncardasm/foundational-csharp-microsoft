@@ -21,27 +21,28 @@
 */
 
 Random attackNum = new Random();
-int playerHP = 10;
+int heroHP = 10;
 int monsterHP = 10;
-
 
 do
 {
-  int playerDMG = attackNum.Next(1, 11);
+  int heroDMG = attackNum.Next(1, 11);
   int monsterDMG = attackNum.Next(1, 11);
 
-  monsterHP -= playerDMG;
-  playerHP -= monsterDMG;
+  monsterHP -= heroDMG;
+  heroHP -= monsterDMG;
 
-  Console.WriteLine($"Monster was damaged and lost {playerDMG} and now has {monsterHP} health");
+  Console.WriteLine($"Monster was damaged and lost {heroDMG} and now has {monsterHP} health");
 
-  if (monsterHP <= 0)
-  {
-    Console.WriteLine("Hero wins!");
-  }
-  else if (playerHP <= 0)
-  {
-    Console.WriteLine("Monster wins!");
-  }
+  Console.WriteLine($"Hero was damaged and lost {monsterDMG} and now has {heroDMG} health");
 
-} while (playerHP > 0 || monsterHP > 0);
+} while (heroHP > 0 || monsterHP > 0);
+
+if (monsterHP <= 0)
+{
+  Console.WriteLine("Hero wins!");
+}
+else if (heroHP <= 0)
+{
+  Console.WriteLine("Monster wins!");
+}

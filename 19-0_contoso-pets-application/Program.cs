@@ -95,3 +95,8 @@ if (readResult != null)
   menuSelection = readResult.ToLower();
 }
 
+Console.WriteLine($"You selected menu option {menuSelection}");
+Console.WriteLine("Press 'Enter' key to continue");
+
+// Pause code execution
+readResult = Console.ReadLine();

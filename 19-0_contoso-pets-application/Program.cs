@@ -64,4 +64,11 @@ for (int i = 0; i < maxPets; i++)
     animalPersonalityDescription = "";
     animalNickname = "";
   }
+
+  ourAnimals[i, 0] = "ID #: " + animalID;
+  ourAnimals[i, 1] = "Species: " + animalSpecies;
+  ourAnimals[i, 2] = "Age: " + animalAge;
+  ourAnimals[i, 3] = "Nickname: " + animalNickname;
+  ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+  ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
 }

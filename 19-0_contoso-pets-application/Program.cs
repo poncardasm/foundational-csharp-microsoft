@@ -88,3 +88,10 @@ Console.WriteLine(" 7. Display all cats with a specified characteristic");
 Console.WriteLine(" 8. Display all dogs with a specified characteristic");
 Console.WriteLine();
 Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
+
+readResult = Console.ReadLine();
+if (readResult != null)
+{
+  menuSelection = readResult.ToLower();
+}
+

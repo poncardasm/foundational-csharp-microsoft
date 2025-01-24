@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-0_for-iteration-loops", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-0_do-while", "18-0_do-while\18-0_do-while.csproj", "{AC679BBB-779A-4978-896C-41AC7C9A5A94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19-0_contoso-pets-application", "19-0_contoso-pets-application\19-0_contoso-pets-application.csproj", "{D0B13363-81A2-41AF-8BD3-988A8950F42D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{AC679BBB-779A-4978-896C-41AC7C9A5A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC679BBB-779A-4978-896C-41AC7C9A5A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC679BBB-779A-4978-896C-41AC7C9A5A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B13363-81A2-41AF-8BD3-988A8950F42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B13363-81A2-41AF-8BD3-988A8950F42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B13363-81A2-41AF-8BD3-988A8950F42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B13363-81A2-41AF-8BD3-988A8950F42D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

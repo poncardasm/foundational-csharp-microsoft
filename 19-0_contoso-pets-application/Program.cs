@@ -92,9 +92,7 @@ do
   Console.WriteLine(" 7. Display all cats with a specified characteristic");
   Console.WriteLine(" 8. Display all dogs with a specified characteristic");
 
-  Console.WriteLine();
-
-  Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
+  Console.WriteLine("\nEnter your selection number (or type Exit to exit the program): ");
 
   readResult = Console.ReadLine();
   if (readResult != null)
@@ -112,57 +110,57 @@ do
   {
     case "1":
       // List all of our current pet information
-      Console.WriteLine("this app feature is coming soon - please check back to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nThis app feature is coming soon - please check back to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "2":
       // Add a new animal friend to the ourAnimals array
-      Console.WriteLine("this app feature is coming soon - please check back to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nThis app feature is coming soon - please check back to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "3":
       // Ensure animal ages and physical descriptions are complete
-      Console.WriteLine("Challenge Project - please check back soon to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nChallenge Project - Please check back soon to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "4":
       // Ensure animal nicknames and personality descriptions are complete
-      Console.WriteLine("Challenge Project - please check back soon to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nChallenge Project - Please check back soon to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "5":
       // Edit an animal's age
-      Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nUNDER CONSTRUCTION - Please check back next month to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "6":
       // Edit an animal's personality description
-      Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nUNDER CONSTRUCTION - Please check back next month to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "7":
       // Display all cats with a specified characteristic
-      Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nUNDER CONSTRUCTION - Please check back next month to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 
     case "8":
       // Display all dogs with a specified characteristic
-      Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-      Console.WriteLine("Press the Enter key to continue.");
+      Console.WriteLine("\nUNDER CONSTRUCTION - Please check back next month to see progress.");
+      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;
 

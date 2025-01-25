@@ -92,7 +92,7 @@ do
   Console.WriteLine(" 7. Display all cats with a specified characteristic");
   Console.WriteLine(" 8. Display all dogs with a specified characteristic");
 
-  Console.WriteLine("\nEnter your selection number (or type Exit to exit the program): ");
+  Console.WriteLine("\nEnter your selection number (or type 'Exit' to end the program): ");
 
   readResult = Console.ReadLine();
   if (readResult != null)
@@ -115,6 +115,10 @@ do
         if (ourAnimals[i, 0] != "ID #: ")
         {
           Console.WriteLine(ourAnimals[i, 0]);
+          for (int j = 0; j < 6; j++)
+          {
+
+          }
         }
       }
       Console.WriteLine("\n--- Press the 'Enter' key to continue ---");

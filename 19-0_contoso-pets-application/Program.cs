@@ -110,7 +110,13 @@ do
   {
     case "1":
       // List all of our current pet information
-      Console.WriteLine("\nThis app feature is coming soon - please check back to see progress.");
+      for (int i = 0; i < maxPets; i++)
+      {
+        if (ourAnimals[i, 0] != "ID #: ")
+        {
+          Console.WriteLine(ourAnimals[i, 0]);
+        }
+      }
       Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
       readResult = Console.ReadLine();
       break;

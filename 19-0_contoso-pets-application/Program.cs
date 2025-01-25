@@ -117,7 +117,7 @@ do
           Console.WriteLine(ourAnimals[i, 0]);
           for (int j = 0; j < 6; j++)
           {
-
+            Console.WriteLine(ourAnimals[i, j]);
           }
         }
       }

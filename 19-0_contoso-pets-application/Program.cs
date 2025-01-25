@@ -145,12 +145,33 @@ do
 
       while (anotherPet == "y" && petCount < maxPets)
       {
+        // Increment the petCount (The array is zero-based, so we increment the counter after adding to the array)
+        petCount += 1;
 
+        if (petCount < maxPets)
+        {
+          // Another pet?
+          Console.WriteLine("\nDo you want to enter info for another pet? (y/n): ");
+
+          do
+          {
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              anotherPet = readResult.ToLower();
+            }
+          } while (anotherPet != "y" && anotherPet != "n");
+        }
+      }
+
+      if (petCount >= maxPets)
+      {
+        Console.WriteLine("\nWe have reached our limits on the number of pets that we can manage.");
+        Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
+        readResult = Console.ReadLine();
       }
 
 
-      Console.WriteLine("\n--- Press the 'Enter' key to continue ---");
-      readResult = Console.ReadLine();
       break;
 
     case "3":

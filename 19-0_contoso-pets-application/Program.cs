@@ -166,6 +166,9 @@ do
         }
       } while (validEntry == false);
 
+      // Build the animal ID number
+      animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
+
       while (anotherPet == "y" && petCount < maxPets)
       {
         // Increment the petCount (The array is zero-based, so we increment the counter after adding to the array)

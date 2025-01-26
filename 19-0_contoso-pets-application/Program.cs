@@ -108,8 +108,7 @@ do
 
   switch (menuSelection)
   {
-    case "1":
-      // List all of our current pet information
+    case "1": // List all of our current pet information
       for (int i = 0; i < maxPets; i++)
       {
         if (ourAnimals[i, 0] != "ID #: ")
@@ -125,8 +124,7 @@ do
       readResult = Console.ReadLine();
       break;
 
-    case "2":
-      // Add a new animal friend to the ourAnimals array
+    case "2": // Add a new animal friend to the ourAnimals array
       string anotherPet = "y";
       int petCount = 0;
 
@@ -190,6 +188,23 @@ do
           }
         }
       } while (validEntry == false);
+
+      // Get the Pet's physical appearance / condition. 
+      // animalPhysicalDescription can be blank
+      do
+      {
+        Console.WriteLine("Enter a physical description of the pet (Size, Color, Gender, Weight, etc.:)");
+        Console.ReadLine();
+
+        if (readResult != null)
+        {
+          animalPhysicalDescription = readResult.ToLower();
+          if (animalPersonalityDescription == "")
+          {
+            animalPhysicalDescription = "tbd";
+          }
+        }
+      } while (animalPhysicalDescription == "");
 
       while (anotherPet == "y" && petCount < maxPets)
       {

@@ -194,7 +194,8 @@ do
       do
       {
         Console.WriteLine("Enter a physical description of the pet (Size, Color, Gender, Weight, etc.:)");
-        Console.ReadLine();
+
+        readResult = Console.ReadLine();
 
         if (readResult != null)
         {

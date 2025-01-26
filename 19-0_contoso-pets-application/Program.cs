@@ -228,7 +228,9 @@ do
       do
       {
         Console.WriteLine("Enter a nickname for the pet");
+
         readResult = Console.ReadLine();
+
         if (readResult != null)
         {
           animalNickname = readResult.ToLower();

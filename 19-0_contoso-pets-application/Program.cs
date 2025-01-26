@@ -213,6 +213,7 @@ do
         Console.WriteLine("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)");
 
         readResult = Console.ReadLine();
+
         if (readResult != null)
         {
           animalPersonalityDescription = readResult.ToLower();
@@ -222,6 +223,21 @@ do
           }
         }
       } while (animalPersonalityDescription == "");
+
+      // Get the pet's nickname. animalNickname can be blank.
+      do
+      {
+        Console.WriteLine("Enter a nickname for the pet");
+        readResult = Console.ReadLine();
+        if (readResult != null)
+        {
+          animalNickname = readResult.ToLower();
+          if (animalNickname == "")
+          {
+            animalNickname = "tbd";
+          }
+        }
+      } while (animalNickname == "");
 
       while (anotherPet == "y" && petCount < maxPets)
       {

@@ -206,6 +206,22 @@ do
         }
       } while (animalPhysicalDescription == "");
 
+      // Get a description of the pet's personality - animalPersonalityDescription can be blank.
+      do
+      {
+        Console.WriteLine("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)");
+
+        readResult = Console.ReadLine();
+        if (readResult != null)
+        {
+          animalPersonalityDescription = readResult.ToLower();
+          if (animalPersonalityDescription == "")
+          {
+            animalPersonalityDescription = "tbd";
+          }
+        }
+      } while (animalPersonalityDescription == "");
+
       while (anotherPet == "y" && petCount < maxPets)
       {
         // Increment the petCount (The array is zero-based, so we increment the counter after adding to the array)

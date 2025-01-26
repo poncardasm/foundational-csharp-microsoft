@@ -189,8 +189,7 @@ do
         }
       } while (validEntry == false);
 
-      // Get the Pet's physical appearance / condition. 
-      // animalPhysicalDescription can be blank
+      // Get the Pet's physical appearance / condition. animalPhysicalDescription can be blank
       do
       {
         Console.WriteLine("Enter a physical description of the pet (Size, Color, Gender, Weight, etc.:)");
@@ -240,6 +239,14 @@ do
           }
         }
       } while (animalNickname == "");
+
+      // Store the pet information in the ourAnimals array (zero based)
+      ourAnimals[petCount, 0] = "ID #: " + animalID;
+      ourAnimals[petCount, 1] = "Species: " + animalSpecies;
+      ourAnimals[petCount, 2] = "Age: " + animalAge;
+      ourAnimals[petCount, 3] = "Nickname: " + animalNickname;
+      ourAnimals[petCount, 4] = "Physical description: " + animalPhysicalDescription;
+      ourAnimals[petCount, 5] = "Personality: " + animalPersonalityDescription;
 
       while (anotherPet == "y" && petCount < maxPets)
       {

@@ -303,6 +303,20 @@ do
           } while (validEntry == false);
           ourAnimals[i, 2] = "Age: " + animalAge.ToString();
         }
+
+        if (ourAnimals[i, 4] == "Physical description: " && ourAnimals[i, 0] != "ID #: ")
+        {
+          do
+          {
+            Console.WriteLine($"Enter a physical description for {ourAnimals[i, 0]}");
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              animalPhysicalDescription = readResult;
+            }
+          } while (animalPhysicalDescription == "");
+          ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+        }
       }
 
       Console.WriteLine("Press the Enter key to continue.");

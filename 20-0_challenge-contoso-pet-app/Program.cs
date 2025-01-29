@@ -87,25 +87,24 @@ do
 {
   Console.Clear();
 
-  Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
+  Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:\n");
+
   Console.WriteLine(" 1. List all of our current pet information");
   Console.WriteLine(" 2. Add a new animal friend to the ourAnimals array");
   Console.WriteLine(" 3. Ensure animal ages and physical descriptions are complete");
   Console.WriteLine(" 4. Ensure animal nicknames and personality descriptions are complete");
-  Console.WriteLine(" 5. Edit an animal’s age");
-  Console.WriteLine(" 6. Edit an animal’s personality description");
+  Console.WriteLine(" 5. Edit an animal's age");
+  Console.WriteLine(" 6. Edit an animal's personality description");
   Console.WriteLine(" 7. Display all cats with a specified characteristic");
   Console.WriteLine(" 8. Display all dogs with a specified characteristic");
-  Console.WriteLine();
-  Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
+
+  Console.WriteLine("\nEnter your selection number (or type Exit to exit the program)");
 
   readResult = Console.ReadLine();
   if (readResult != null)
   {
     menuSelection = readResult.ToLower();
-    // NOTE: We could put a do statement around the menuSelection entry to ensure a valid entry, but we
-    //  use a conditional statement below that only processes the valid entry values, so the do statement 
-    //  is not required here. 
+    // NOTE: We could put a do statement around the menuSelection entry to ensure a valid entry, but we use a conditional statement below that only processes the valid entry values, so the do statement is not required here. 
   }
 
   // use switch-case to process the selected menu option
@@ -152,12 +151,12 @@ do
 
       if (petCount < maxPets)
       {
-        Console.WriteLine($"We currently have {petCount} pets that need homes. We can manage {(maxPets - petCount)} more.");
+        Console.WriteLine($"We currently have {petCount} pets that need homes. We can manage {maxPets - petCount} more.");
       }
 
       while (anotherPet == "y" && petCount < maxPets)
       {
-        // get species (cat or dog) - string animalSpecies is a required field 
+        // Get species (cat or dog) - string animalSpecies is a required field 
         do
         {
           Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry");
@@ -168,19 +167,19 @@ do
             if (animalSpecies != "dog" && animalSpecies != "cat")
             {
               //Console.WriteLine($"You entered: {animalSpecies}.");
-              validEntry = false;
+              // validEntry = false;
             }
             else
             {
-              validEntry = true;
+              // validEntry = true;  
             }
           }
-        } while (validEntry == false);
+        } while (animalSpecies == "");
 
-        // build the animal the ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
+        // Build the animal the ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
         animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
 
-        // get the pet's age. can be ? at initial entry.
+        // Get the pet's age. Can be ? at initial entry.
         do
         {
           Console.WriteLine("Enter the pet's age or enter ? if unknown");
@@ -197,10 +196,10 @@ do
               validEntry = true;
             }
           }
-        } while (validEntry == false);
+        } while (animalAge == "");
 
 
-        // get a description of the pet's physical appearance - animalPhysicalDescription can be blank.
+        // Get a description of the pet's physical appearance - animalPhysicalDescription can be blank.
         do
         {
           Console.WriteLine("Enter a physical description of the pet (size, color, gender, weight, housebroken)");
@@ -213,10 +212,10 @@ do
               animalPhysicalDescription = "tbd";
             }
           }
-        } while (validEntry == false);
+        } while (animalPhysicalDescription == "");
 
 
-        // get a description of the pet's personality - animalPersonalityDescription can be blank.
+        // Get a description of the pet's personality - animalPersonalityDescription can be blank.
         do
         {
           Console.WriteLine("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)");
@@ -228,11 +227,12 @@ do
             {
               animalPersonalityDescription = "tbd";
             }
+            // validEntry = true;  // Set to true after successful input
           }
-        } while (validEntry == false);
+        } while (animalPersonalityDescription == "");
 
 
-        // get the pet's nickname. animalNickname can be blank.
+        // Get the pet's nickname. animalNickname can be blank.
         do
         {
           Console.WriteLine("Enter a nickname for the pet");
@@ -245,9 +245,9 @@ do
               animalNickname = "tbd";
             }
           }
-        } while (validEntry == false);
+        } while (animalNickname == "");
 
-        // store the pet information in the ourAnimals array (zero based)
+        // Store the pet information in the ourAnimals array (zero based)
         ourAnimals[petCount, 0] = "ID #: " + animalID;
         ourAnimals[petCount, 1] = "Species: " + animalSpecies;
         ourAnimals[petCount, 2] = "Age: " + animalAge;
@@ -255,13 +255,13 @@ do
         ourAnimals[petCount, 4] = "Physical description: " + animalPhysicalDescription;
         ourAnimals[petCount, 5] = "Personality: " + animalPersonalityDescription;
 
-        // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
+        // Increment petCount (the array is zero-based, so we increment the counter after adding to the array)
         petCount = petCount + 1;
 
-        // check maxPet limit
+        // Check maxPet limit
         if (petCount < maxPets)
         {
-          // another pet?
+          // Another pet?
           Console.WriteLine("Do you want to enter info for another pet (y/n)");
           do
           {
@@ -300,14 +300,14 @@ do
       break;
 
     case "5":
-      // Edit an animal’s age");
+      // Edit an animal's age");
       Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
       Console.WriteLine("Press the Enter key to continue.");
       readResult = Console.ReadLine();
       break;
 
     case "6":
-      // Edit an animal’s personality description");
+      // Edit an animal's personality description");
       Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
       Console.WriteLine("Press the Enter key to continue.");
       readResult = Console.ReadLine();

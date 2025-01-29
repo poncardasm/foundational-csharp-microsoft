@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-// the ourAnimals array will store the following: 
+﻿// the ourAnimals array will store the following: 
 string animalSpecies = "";
 string animalID = "";
 string animalAge = "";
@@ -339,6 +336,20 @@ do
             }
           } while (animalNickname == "");
           ourAnimals[i, 3] = "Nickname: " + animalNickname;
+        }
+
+        if (ourAnimals[i, 4] == "Personality: " && ourAnimals[i, 0] != "ID #: ")
+        {
+          do
+          {
+            Console.WriteLine($"Enter a personality description for {ourAnimals[i, 0]} (likes or dislikes, tricks, energy level) ");
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              animalPersonalityDescription = readResult;
+            }
+          } while (animalPersonalityDescription == "");
+          ourAnimals[i, 4] = "Personality: " + animalPersonalityDescription;
         }
       }
       Console.WriteLine("Press the Enter key to continue.");

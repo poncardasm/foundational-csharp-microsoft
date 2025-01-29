@@ -289,56 +289,20 @@ do
       // Loop through all animals
       for (int i = 0; i < maxPets; i++)
       {
-        if (ourAnimals[i, 0] != "ID #: ")
+        if (ourAnimals[i, 2] == "Age: ?" && ourAnimals[i, 0] != "ID #: ")
         {
-          // Check if age needs updating
-          if (ourAnimals[i, 2].Contains("?") || ourAnimals[i, 2].Contains("tbd"))
+          do
           {
-            do
+            Console.WriteLine($"Enter an age for {ourAnimals[i, 0]}");
+            readResult = Console.ReadLine();
+            if (readResult != null)
             {
-              // 1. Display the pet's ID
-              Console.WriteLine($"\nEnter an age for {ourAnimals[i, 0]}");
-
-              // 2. Prompt for new age
-              readResult = Console.ReadLine();
-              if (readResult != null)
-              {
-                ourAnimals[i, 2] = readResult;
-                validEntry = true;
-              }
-
-              // 3. Validate the input (what checks should we do here?)
-              // TODO: Add validation logic
-
-              // 4. Update the age if valid
-              // TODO: Add update logic
-
-            } while (!validEntry);
-          }
+              animalAge = readResult;
+              validEntry = int.TryParse(animalAge, out petAge);
+            }
+          } while (validEntry == false);
+          ourAnimals[i, 2] = "Age: " + animalAge.ToString();
         }
-        // if (!string.IsNullOrEmpty(ourAnimals[i, 0]) && ourAnimals[i, 0] != "ID #: ")
-        // {
-        //   // Validate the age
-        //   while (!int.TryParse(ourAnimals[i, 2], out _) || ourAnimals[i, 2] == "?")
-        //   {
-        //     Console.WriteLine($"Pet {ourAnimals[i, 0]} missing or invalid AGE. Please enter a valid number:");
-        //     readResult = Console.ReadLine();
-        //     if (readResult != null)
-        //     {
-        //       ourAnimals[i, 2] = readResult;
-        //     }
-        //   }
-
-        //   // Validate the physical description
-        //   while (string.IsNullOrWhiteSpace(ourAnimals[i, 3]))
-        //   {
-        //     Console.WriteLine($"Pet {ourAnimals[i, 0]} missing PHYSICAL DESCRIPTION. Please enter a non-empty string:");
-        //     if (readResult != null)
-        //     {
-        //       ourAnimals[i, 4] = readResult;
-        //     }
-        //   }
-        // }
       }
 
       Console.WriteLine("Press the Enter key to continue.");

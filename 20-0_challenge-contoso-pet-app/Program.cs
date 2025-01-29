@@ -285,17 +285,39 @@ do
 
       break;
 
-    case "3":
+    case "3": // Ensure animal ages and physical descriptions are complete
+
       // Loop through all animals
       for (int i = 0; i < maxPets; i++)
       {
         if (ourAnimals[i, 0] != "ID #: ")
         {
-          // Check if age needs updating
+          // Validate the age
+          while (!int.TryParse(ourAnimals[i, 2], out _))
+          {
+            Console.WriteLine($"Enter an age for {ourAnimals[i, 0]}");
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              ourAnimals[i, 2] = readResult;
+            }
+
+          }
+
+          // Validate the physical description
+          while (string.IsNullOrWhiteSpace(ourAnimals[i, 4]))
+          {
+            Console.WriteLine($"Enter a physical description for {ourAnimals[i, 0]} (size, color, breed, gender, weight, housebroken)");
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              ourAnimals[i, 4] = readResult;
+            }
+          }
         }
       }
-      // Ensure animal ages and physical descriptions are complete
-      Console.WriteLine("Challenge Project - please check back soon to see progress.");
+
+      Console.WriteLine("Press the Enter key to continue.");
       readResult = Console.ReadLine();
       break;
 
@@ -337,5 +359,4 @@ do
     default:
       break;
   }
-
 } while (menuSelection != "exit");

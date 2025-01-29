@@ -323,9 +323,24 @@ do
       readResult = Console.ReadLine();
       break;
 
-    case "4":
-      // Ensure animal nicknames and personality descriptions are complete
-      Console.WriteLine("Challenge Project - please check back soon to see progress.");
+    case "4": // Ensure animal nicknames and personality descriptions are complete
+      // Loop through all animals
+      for (int i = 0; i < maxPets; i++)
+      {
+        if (ourAnimals[i, 3] == "Nickname: " && ourAnimals[i, 0] != "ID #: ")
+        {
+          do
+          {
+            Console.WriteLine($"Enter a nickname for {ourAnimals[i, 0]}");
+            readResult = Console.ReadLine();
+            if (readResult != null)
+            {
+              animalNickname = readResult;
+            }
+          } while (animalNickname == "");
+          ourAnimals[i, 3] = "Nickname: " + animalNickname;
+        }
+      }
       Console.WriteLine("Press the Enter key to continue.");
       readResult = Console.ReadLine();
       break;

@@ -338,7 +338,7 @@ do
           ourAnimals[i, 3] = "Nickname: " + animalNickname;
         }
 
-        if (ourAnimals[i, 4] == "Personality: " && ourAnimals[i, 0] != "ID #: ")
+        if (ourAnimals[i, 5] == "Personality: " && ourAnimals[i, 0] != "ID #: ")
         {
           do
           {

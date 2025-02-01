@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20-0_challenge-contoso-pet-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-0_integral-types", "21-0_integral-types\21-0_integral-types.csproj", "{037EC2EC-CBD9-43C7-99B5-975E529A7411}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-1_floating-point-types", "21-1_floating-point-types\21-1_floating-point-types.csproj", "{2A5FCB6A-52FA-4C59-84EC-69526631B582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{037EC2EC-CBD9-43C7-99B5-975E529A7411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037EC2EC-CBD9-43C7-99B5-975E529A7411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037EC2EC-CBD9-43C7-99B5-975E529A7411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5FCB6A-52FA-4C59-84EC-69526631B582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5FCB6A-52FA-4C59-84EC-69526631B582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5FCB6A-52FA-4C59-84EC-69526631B582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5FCB6A-52FA-4C59-84EC-69526631B582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

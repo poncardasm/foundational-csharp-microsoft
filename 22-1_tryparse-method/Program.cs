@@ -7,5 +7,7 @@ if (int.TryParse(value, out result))
 }
 else
 {
-  Console.WriteLine($"Unable to report the measurement.")
+  Console.WriteLine($"Unable to report the measurement.");
 }
+
+Console.WriteLine($"Measurement with offset: {50 + result}");

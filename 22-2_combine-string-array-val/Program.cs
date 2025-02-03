@@ -1,5 +1,6 @@
 ﻿string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 float total = 0;
+string message = "";
 
 foreach (string value in values)
 {
@@ -7,6 +8,12 @@ foreach (string value in values)
   {
     total += result;
   }
+  else
+  {
+    message += value;
+  }
+
 }
 
+Console.WriteLine($"Message: {message}");
 Console.WriteLine($"Total: {total}");

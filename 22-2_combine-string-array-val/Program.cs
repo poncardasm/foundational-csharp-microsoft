@@ -8,6 +8,6 @@ foreach (string value in values)
   {
     total += result;
   }
-
-  Console.WriteLine($"Total: {total}");
 }
+
+Console.WriteLine($"Total: {total}");

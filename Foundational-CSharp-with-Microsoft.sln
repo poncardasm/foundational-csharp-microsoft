@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-2_combine-string-array-v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-3_output-math-operation", "22-3_output-math-operation\22-3_output-math-operation.csproj", "{95999772-6B73-4C37-8209-F678E3E201F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-0_perform-operations-on-arrays-using-helper-methods", "23-0_perform-operations-on-arrays-using-helper-methods\23-0_perform-operations-on-arrays-using-helper-methods.csproj", "{C0169F5D-B61C-4D4F-8EC1-C3A2C5F3A637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{95999772-6B73-4C37-8209-F678E3E201F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95999772-6B73-4C37-8209-F678E3E201F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95999772-6B73-4C37-8209-F678E3E201F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0169F5D-B61C-4D4F-8EC1-C3A2C5F3A637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0169F5D-B61C-4D4F-8EC1-C3A2C5F3A637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0169F5D-B61C-4D4F-8EC1-C3A2C5F3A637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0169F5D-B61C-4D4F-8EC1-C3A2C5F3A637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

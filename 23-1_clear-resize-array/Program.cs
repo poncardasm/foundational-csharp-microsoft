@@ -25,3 +25,11 @@ foreach (var pallet in pallets)
 {
   Console.WriteLine($"-- {pallet}");
 }
+
+Array.Resize(ref pallets, 3);
+Console.WriteLine($"\n Resizing 3 ... count: {pallets.Length}");
+
+foreach (var pallet in pallets)
+{
+  Console.WriteLine($"-- {pallet}");
+}

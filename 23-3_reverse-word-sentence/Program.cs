@@ -3,7 +3,7 @@ string[] pangramSplits = pangram.Split(" ");
 
 foreach (var pangramSplit in pangramSplits)
 {
-  char[] pangramChars = pangramSplit.ToArray();
+  char[] pangramChars = pangramSplit.ToCharArray();
   Array.Reverse(pangramChars);
 
   string pangramReverse = new(pangramChars);

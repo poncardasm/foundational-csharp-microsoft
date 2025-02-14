@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-3_reverse-word-sentence"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-4_parse-orders", "23-4_parse-orders\23-4_parse-orders.csproj", "{23B1546B-DBFC-4FC0-97BD-F9B8F8201A98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24-0_work-with-variable-data", "24-0_work-with-variable-data\24-0_work-with-variable-data.csproj", "{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{23B1546B-DBFC-4FC0-97BD-F9B8F8201A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23B1546B-DBFC-4FC0-97BD-F9B8F8201A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23B1546B-DBFC-4FC0-97BD-F9B8F8201A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

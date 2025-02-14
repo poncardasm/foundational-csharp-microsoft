@@ -34,3 +34,12 @@ Console.WriteLine($"\n-- Formatting Numbers --\n");
 
 decimal measurement = 123456.78912m;
 Console.WriteLine($"Measurement: {measurement:N} units");
+
+/*
+ * Formatting percentages
+ */
+Console.WriteLine($"\n-- Formatting percentages --\n");
+
+decimal tax = 0.36785m;
+Console.WriteLine($"Tax rate: {tax:P2}");
+

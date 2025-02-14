@@ -54,3 +54,14 @@ decimal salePrice = 59.99m;
 string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (price2 - salePrice), price2);
 
 Console.WriteLine(yourDiscount);
+
+/*
+ * with this string interpolation approach
+ */
+Console.WriteLine($"\n-- with this string interpolation approach --\n");
+
+decimal price3 = 67.55m;
+decimal salePrice2 = 59.99m;
+
+yourDiscount += $"A discount of {((price3 - salePrice2) / price3):P2}!"; //inserted
+Console.WriteLine(yourDiscount);

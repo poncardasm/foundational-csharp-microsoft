@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23-4_parse-orders", "23-4_p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24-0_work-with-variable-data", "24-0_work-with-variable-data\24-0_work-with-variable-data.csproj", "{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25-0_modify-content-of-strings", "25-0_modify-content-of-strings\25-0_modify-content-of-strings.csproj", "{1F7DF46E-2E5D-4B02-B7F5-A9796F28DC36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929F04F8-8B3D-4C79-A7EA-BDD8D69053FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7DF46E-2E5D-4B02-B7F5-A9796F28DC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7DF46E-2E5D-4B02-B7F5-A9796F28DC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7DF46E-2E5D-4B02-B7F5-A9796F28DC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7DF46E-2E5D-4B02-B7F5-A9796F28DC36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

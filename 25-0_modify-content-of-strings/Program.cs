@@ -28,9 +28,13 @@ Console.WriteLine($"\n-- Modify the starting position of the sub string --\n");
 
 string newMessage = "What is the value <span>between the tags</span>?";
 
-int NewOpeningPosition = newMessage.IndexOf("<span>");
-int NewClosingPosition = newMessage.IndexOf("</span>");
+const string openSpan = "<span>";
+const string closeSpan = "</span>";
 
-NewOpeningPosition += 6;
-int newLength = NewClosingPosition - NewOpeningPosition;
-Console.WriteLine(newMessage.Substring(NewOpeningPosition, newLength));
+int newOpeningPosition = newMessage.IndexOf(openSpan);
+int newClosingPosition = newMessage.IndexOf(closeSpan);
+
+newOpeningPosition += openSpan.Length;
+
+int newLength = newClosingPosition - newOpeningPosition;
+Console.WriteLine(newMessage.Substring(newOpeningPosition, newLength));

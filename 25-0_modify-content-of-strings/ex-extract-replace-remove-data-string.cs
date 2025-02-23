@@ -12,9 +12,18 @@ public class ExtractReplaceRemove
     string quantity = "";
     string output = "";
 
-    // Your work here
+    // Extract quantity (number between <span> and </span>)
+    int spanStart = input.IndexOf("<span>") + 6;
+    int spanEnd = input.IndexOf("</span>");
+    quantity = input.Substring(spanStart, spanEnd - spanStart);
 
-    Console.WriteLine(quantity);
-    Console.WriteLine(output);
+    // Create output by removing div tags and replacing &trade with &reg
+
+    output = input.Replace("<div>", "")
+                  .Replace("</div", "")
+                  .Replace("&trade", "&reg");
+
+    Console.WriteLine($"Quantity: {quantity}");
+    Console.WriteLine($"Qutput: {output}");
   }
 }

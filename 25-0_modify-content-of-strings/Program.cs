@@ -4,5 +4,6 @@
 */
 using _25_0_modify_content_of_strings;
 
-RemoveReplaceMethod.Run();
+// RemoveReplaceMethod.Run();
+ExtractReplaceRemove.Run();
 

@@ -169,7 +169,7 @@ do
       {
         Console.WriteLine("\nNone of our dogs are a match found for: " + dogCharacteristic);
       }
-      Console.WriteLine("Please the Enter key to continue");
+      Console.WriteLine("\nPlease the Enter key to continue");
       readResult = Console.ReadLine();
       break;
 

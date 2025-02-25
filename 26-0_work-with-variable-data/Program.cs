@@ -147,6 +147,7 @@ do
       }
 
       string dogDescription = "";
+      bool noMatchesDog = true;
 
       // #6 Loop through all the ourAnimals array to search for matching animals
       for (int i = 0; i < maxPets; i++)
@@ -158,8 +159,15 @@ do
           {
             Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} is a match");
             Console.WriteLine(dogDescription);
+
+            noMatchesDog = false;
           }
         }
+      }
+
+      if (noMatchesDog)
+      {
+        Console.WriteLine("\nNone of our dogs are a match found for: " + dogCharacteristic);
       }
       Console.WriteLine("Please the Enter key to continue");
       readResult = Console.ReadLine();

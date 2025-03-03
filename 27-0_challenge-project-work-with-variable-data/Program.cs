@@ -208,17 +208,20 @@ do
           }
 
           // #3d if "this dog" is match write match message + dog description
+          if (matchesCurrentDog)
+          {
+            Console.WriteLine($"\r{ourAnimals[i, 3]} ({ourAnimals[i, 0]}) \n{dogDescription}\n");
+          }
         }
       }
 
-      if (noMatchesDog)
+      if (!matchesanyDog)
       {
         Console.WriteLine("None of our dogs are a match found for: " + dogCharacteristic);
       }
 
       Console.WriteLine("\n\rPress the Enter key to continue");
       readResult = Console.ReadLine();
-
       break;
 
     default:

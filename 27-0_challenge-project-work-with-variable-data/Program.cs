@@ -162,7 +162,7 @@ do
       // #4 update to "rotating" animation with countdown
       string[] searchingIcons = { "|", "/", "-", "\\", "*" };
 
-      bool noMatchesDog = false;
+      bool matchesanyDog = false;
       string dogDescription = "";
 
 
@@ -190,19 +190,21 @@ do
                   Console.Write($"\rSearching our dog {ourAnimals[i, 3]} for {term.Trim()} {icon} {j} ");
                   Thread.Sleep(100);
                 }
+
+                Console.WriteLine($"\r{new string(' ', Console.BufferWidth)}");
+              }
+
+              // #3a iterate submitted characteristic terms and search description for each term
+
+              if (dogDescription.Contains(" " + term.Trim() + " "))
+              {
+                // #3b update message to reflect term
+                Console.WriteLine($"\rOur dog {ourAnimals[i, 3]} matches your search for {term.Trim()}");
+
+                matchesCurrentDog = true;
+                matchesanyDog = true;
               }
             }
-          }
-
-          // #3a iterate submitted characteristic terms and search description for each term
-
-          if (dogDescription.Contains(dogCharacteristic))
-          {
-            // #3b update message to reflect term 
-            // #3c set a flag "this dog" is a match
-            Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} is a match!");
-
-            noMatchesDog = false;
           }
 
           // #3d if "this dog" is match write match message + dog description

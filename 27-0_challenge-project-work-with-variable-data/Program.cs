@@ -2,8 +2,6 @@
 Module: https://learn.microsoft.com/en-us/training/modules/challenge-project-work-variable-data-c-sharp/
 */
 
-using System;
-
 // ourAnimals array will store the following: 
 string animalSpecies = "";
 string animalID = "";
@@ -152,18 +150,21 @@ do
       }
 
       // Split the user input into an array of search terms
-      string[] dogCharacteristics = dogCharacteristic.Split(',');
+      string[] dogSearches = dogCharacteristic.Split(',');
+
       // trim leading and trailing spaces from each search term
-      for (int i = 0; i < dogCharacteristics.Length; i++)
+      for (int i = 0; i < dogSearches.Length; i++)
       {
-        dogCharacteristics[i] = dogCharacteristics[i].Trim();
+        dogSearches[i] = dogSearches[i].Trim();
       }
 
-      bool noMatchesDog = true;
+      Array.Sort(dogSearches);
+      // #4 update to "rotating" animation with countdown
+      string[] searchingIcons = { "|", "/", "-", "\\", "*" };
+
+      bool noMatchesDog = false;
       string dogDescription = "";
 
-      // #4 update to "rotating" animation with countdown
-      string[] searchingIcons = { ".  ", ".. ", "..." };
 
       // loop ourAnimals array to search for matching animals
       for (int i = 0; i < maxPets; i++)
@@ -173,19 +174,24 @@ do
         {
 
           // Search combined descriptions and report results
-          dogDescription = ourAnimals[i, 4] + "\r\n" + ourAnimals[i, 5];
+          dogDescription = ourAnimals[i, 4] + "\n" + ourAnimals[i, 5];
+          bool matchesCurrentDog = false;
 
-
-          for (int j = 5; j > -1; j--)
+          foreach (string term in dogSearches)
           {
-            // #5 update "searching" message to show countdown 
-            foreach (string icon in searchingIcons)
+            // Only search if the term is not empty
+            if (term != null && term.Trim() != "")
             {
-              Console.Write($"\rsearching our dog {ourAnimals[i, 3]} for {dogCharacteristic} {icon}");
-              Thread.Sleep(250);
+              for (int j = 2; j > -1; j--)
+              {
+                // #5 Update "searching" message to show countdown
+                foreach (string icon in searchingIcons)
+                {
+                  Console.Write($"\rSearching our dog {ourAnimals[i, 3]} for {term.Trim()} {icon} {j} ");
+                  Thread.Sleep(100);
+                }
+              }
             }
-
-            Console.Write($"\r{new String(' ', Console.BufferWidth)}");
           }
 
           // #3a iterate submitted characteristic terms and search description for each term
